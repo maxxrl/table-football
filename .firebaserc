@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "table-football-b82b0": {
+      "hosting": {
+        "table-football": [
+          "table-football-b82b0"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "table-football-b82b0"
+  }
+}

@@ -1,0 +1,17 @@
+<form (ngSubmit)="onSubmit()">
+  <select [(ngModel)]="selectedSpieler1" name="selectedSpieler1">
+    <option *ngFor="let spieler of spieler" [ngValue]="spieler">{{spieler.name}}</option>
+  </select>
+  <select [(ngModel)]="selectedSpieler2" name="selectedSpieler2">
+    <option *ngFor="let spieler of spieler" [ngValue]="spieler">{{spieler.name}}</option>
+  </select>
+  <button type="submit">Team hinzufügen</button>
+</form>
+
+
+<div class="team-list-container">
+  <h3>Team Liste</h3>
+  <ul>
+    <li *ngFor="let team of teams">{{team.name}}</li>
+  </ul>
+</div>

@@ -1,0 +1,8 @@
+<form (ngSubmit)="onSubmit()">
+  <input type="text" [(ngModel)]="spielerName" name="spielerName">
+  <button type="submit">Spieler hinzufügen</button>
+</form>
+<h3>Hinzugefügte Spieler:</h3>
+<ul>
+  <li *ngFor="let spiel of spieler">{{ spiel.name }}</li>
+</ul>

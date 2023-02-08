@@ -1,0 +1,18 @@
+<form (ngSubmit)="onSubmit()">
+  <select [(ngModel)]="selectedTeam1" name="selectedTeam1">
+    <option *ngFor="let team of teams" [ngValue]="team">{{team.name}}</option>
+  </select>
+  <select [(ngModel)]="selectedTeam2" name="selectedTeam2">
+    <option *ngFor="let team of teams" [ngValue]="team">{{team.name}}</option>
+  </select>
+  <select [(ngModel)]="selectedLoser" name="selectedLoser">
+    <option *ngFor="let team of teams" [ngValue]="team">{{team.name}}</option>
+  </select>
+  <button type="submit">Match hinzufügen</button>
+</form>
+<div class="match-list-container">
+  <h3>Loser List</h3>
+  <ul>
+    <li *ngFor="let match of matches">{{match.loser.name}}</li>
+  </ul>
+</div>
